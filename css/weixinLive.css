@@ -1,14 +1,37 @@
 @media screen and (max-width: 900px) {
-    div#side-bar,section#footer,.live-player-container,.live-basic-info{
+    div#side-bar,section#footer,.live-player-container,
+    .live-basic-info,
+    div.live-realtime-title-left,
+    div.live-realtime-title-duration
+    {
         display: none !important;
     }
+    div.live-realtime-title{
+        flex-direction: row-reverse;
+        position: fixed;
+        right: 0;
+        top: 63px;
+        z-index: 99;
+        button{
+            min-width: 100px !important;
+            padding: 0px !important;
+        }
+    }
+    div#app{
+        background-color: white;
+    }
+    div.app-body{
+        display: block !important;
+    }
     div#container-wrap{
-        position: initial !important
+        position: initial !important;
+        width: unset !important
     }
     /* 取消容器的宽度限制 */
     div.container-center{
         max-width: unset !important;
-        min-width: none !important;
+        min-width: unset !important;
+
         padding: 0 !important;
     }
     /* 直播信息 */
@@ -25,26 +48,70 @@
     }
     div.live-top-card{
         div.live-stream-info{
-            padding: 0px;
+            padding: 0px !important;
             div.live-realtime-data{
-                margin: 0px;
+                margin: 0px !important;
+                padding: 4px 0 !important;
+                justify-content: space-between;
+                overflow: hidden;
+                div.live-data-item{
+                    width: unset !important;
+                    margin: unset !important;
+                    padding: 0 3px !important;
+                    height: unset !important;
+                    background: unset !important;
+
+                }
+                div.dashboard-entry{
+                    display: none !important;
+                }
             }
         }
     }
     /* 弹幕信息 */
     div.live-realtime-interactive-part{
-        display:block !important
+        margin: 0px !important;
+        display:block !important;
+        div.ant-tabs-nav-wrap{
+            margin-top:-20px;
+            position: relative;
+
+        }
     }
+    
     div.live-realtime-interactive-part> :nth-child(1) {
         display: none;
     }
+    /* 在线用户 */
     div.live-realtime-interactive-part> :nth-child(2) 
     {
-        height:300px !important;
-        min-height: 300px !important;
+        height:320px !important;
+        min-height: 320px !important;
         overflow:scroll;
+        margin: 0 !important;
+        div.live-gift-list-item.rank{
+            padding: 5px 5px 0px 5px;
+        }
+        div.ant-tabs-bar.ant-tabs-top-bar{
+            position: fixed;
+            background: white;
+            z-index: 9;
+            width: 100%;
+            div.ant-tabs-tab{
+                visibility: hidden;
+            }
+            div.ant-tabs-tab-active.ant-tabs-tab{
+                visibility: visible;
+            }
+        }
+        div.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content{
+            margin-top: 40px ;
+        }
     }
+    /* 弹幕评论 */
+    /* div.live-realtime-interactive-part> :nth-child(3){
 
+    }  */
 
 
 }

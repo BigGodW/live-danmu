@@ -6,6 +6,12 @@
     "action": {
       "default_icon": "logo.png"
     },
+    "icons":{
+      "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+    },
     "content_scripts": [
         {
           "js":["scripts/douyinLive.js"],
@@ -24,6 +30,7 @@
           ]
         },
         {
+          "js":["scripts/taobaoLive.js"],
           "css":["css/taobaoLive.css"],
           "runAt" : "document_idle",
           "matches": [
@@ -31,6 +38,14 @@
           ]
         },
         {
+          "js":["scripts/taobaoShop.js"],
+          "runAt" : "document_idle",
+          "matches": [
+            "https://myseller.taobao.com/home.htm/qn-live-container/live/*"
+          ]
+        },
+        {
+          "js":["scripts/weixinLive.js"],
           "css":["css/weixinLive.css"],
           "runAt" : "document_idle",
           "matches": [
