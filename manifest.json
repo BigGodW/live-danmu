@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+    "name": "弹幕插件",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_icon": "logo.png"
+    },
+    "content_scripts": [
+        {
+          "js":["scripts/douyinLive.js"],
+          "css":["css/douyinLive.css"],
+          "runAt" : "document_idle",
+          "matches": [
+            "https://live.douyin.com/*"
+          ]
+        },
+        { 
+          "js":["scripts/kuaishouLive.js"],
+          "css":["css/kuaishouLive.css"],
+          "runAt" : "document_idle",
+          "matches": [
+            "https://live.kuaishou.com/*"
+          ]
+        },
+        {
+          "css":["css/taobaoLive.css"],
+          "runAt" : "document_idle",
+          "matches": [
+            "https://tbzb.taobao.com/*"
+          ]
+        },
+        {
+          "css":["css/weixinLive.css"],
+          "runAt" : "document_idle",
+          "matches": [
+            "https://channels.weixin.qq.com/*"
+          ]
+        }
+      ]
+    
+  }
+  

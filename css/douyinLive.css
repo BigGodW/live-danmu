@@ -1,0 +1,18 @@
+
+
+@media screen and (max-width: 501px) {
+    div#douyin-navigation,div#douyin-header,div#douyin-sidebar
+    {
+        display: none;
+    }
+    
+    div#chatroom{
+        height: 100vh !important; 
+        width: 100vw !important;
+        padding: 10px;
+    }
+    div[id^='living_room_player_container']{
+        display: none !important;
+    }
+
+}

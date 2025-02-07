@@ -1,0 +1,9 @@
+@media screen and (max-width: 501px) {
+    div.header-placeholder,div.player-wrapper{
+        display: none;
+    }
+
+    div#liveroom__sidebar{
+        width: 100vw;
+    }
+}

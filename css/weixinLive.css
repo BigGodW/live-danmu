@@ -1,0 +1,50 @@
+@media screen and (max-width: 900px) {
+    div#side-bar,section#footer,.live-player-container,.live-basic-info{
+        display: none !important;
+    }
+    div#container-wrap{
+        position: initial !important
+    }
+    /* 取消容器的宽度限制 */
+    div.container-center{
+        max-width: unset !important;
+        min-width: none !important;
+        padding: 0 !important;
+    }
+    /* 直播信息 */
+    div.live-realtime-container{
+        padding: 0 !important;
+        div.live-realtime-title{
+            justify-content: left;
+        }
+        div.live-top-card{
+            margin: 0 !important;
+            min-height: unset !important;
+        }
+
+    }
+    div.live-top-card{
+        div.live-stream-info{
+            padding: 0px;
+            div.live-realtime-data{
+                margin: 0px;
+            }
+        }
+    }
+    /* 弹幕信息 */
+    div.live-realtime-interactive-part{
+        display:block !important
+    }
+    div.live-realtime-interactive-part> :nth-child(1) {
+        display: none;
+    }
+    div.live-realtime-interactive-part> :nth-child(2) 
+    {
+        height:300px !important;
+        min-height: 300px !important;
+        overflow:scroll;
+    }
+
+
+
+}
