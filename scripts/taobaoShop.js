@@ -12,9 +12,9 @@ button.style.border = 'none'
 // 获取直播间ID
 
 setTimeout(()=>{
-    let roomBox = document.getElementsByClassName('tblalm-list-item')[0]
+    let roomBox = document.getElementsByClassName('tblalm-lm-list-item-live online')[0]
 if(roomBox){
-    const roomid = roomBox.getElementsByClassName('tui-number-figure tui-number-figure-default ')[2].textContent
+    const roomid = roomBox.getElementsByClassName('tui-number-figure tui-number-figure-default ')[1].textContent
     if(roomid){
         button.addEventListener('click',()=>{
             console.log('按钮点击了')
