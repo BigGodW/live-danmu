@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 501px) {
+   div[class^='style_footerWrapper']{
+    display: none !important;
+   }
+   div[class^='index_banner_']{
+    padding: 0px !important;
+    justify-content: center
+   }
+   div[class^='index_rootContainer']{
+    width: 350px;
+   }
+
+}

@@ -3,7 +3,7 @@
 @media screen and (max-width: 501px) {
     div#douyin-navigation,div#douyin-header,div#douyin-sidebar
     {
-        display: none;
+        display: none !important;
     }
     
     div#chatroom{

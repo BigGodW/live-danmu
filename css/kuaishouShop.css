@@ -1,0 +1,9 @@
+@media screen and (max-width: 501px) {
+    #root>div>div:nth-child(2)>div>img{
+        display: none;
+    }
+    #root>div>div:nth-child(2)>div{
+        width: 100% !important;
+        padding-left: 30px;
+    }
+ }

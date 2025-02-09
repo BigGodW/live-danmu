@@ -1,65 +1,60 @@
 {
-    "manifest_version": 3,
-    "name": "弹幕插件",
-    "description": "弹幕汇总平台 抖音 快手 淘宝 视频号",
-    "version": "1.0",
-    "action": {
-      "default_icon": {
-        "16": "logo.png",
-        "32": "logo.png",
-        "48": "logo.png",
-        "128": "logo.png"
-      },
-      "default_popup":"hello.html"
-    },
-    "icons":{
+  "manifest_version": 3,
+  "name": "弹幕插件",
+  "description": "弹幕汇总平台 抖音 快手 淘宝 视频号",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
       "16": "logo.png",
       "32": "logo.png",
       "48": "logo.png",
       "128": "logo.png"
     },
-    "content_scripts": [
-        {
-          "js":["scripts/douyinLive.js"],
-          "css":["css/douyinLive.css"],
-          "runAt" : "document_idle",
-          "matches": [
-            "https://live.douyin.com/*"
-          ]
-        },
-        { 
-          "js":["scripts/kuaishouLive.js"],
-          "css":["css/kuaishouLive.css"],
-          "runAt" : "document_idle",
-          "matches": [
-            "https://live.kuaishou.com/*"
-          ]
-        },
-        {
-          "js":["scripts/taobaoLive.js"],
-          "css":["css/taobaoLive.css"],
-          "runAt" : "document_idle",
-          "matches": [
-            "https://tbzb.taobao.com/*"
-          ]
-        },
-        {
-          "js":["scripts/taobaoShop.js"],
-          "runAt" : "document_idle",
-          "matches": [
-            "https://myseller.taobao.com/home.htm/qn-live-container/live/*"
-          ]
-        },
-        {
-          "js":["scripts/weixinLive.js"],
-          "css":["css/weixinLive.css"],
-          "runAt" : "document_idle",
-          "matches": [
-            "https://channels.weixin.qq.com/*"
-          ]
-        }
-      ],
-      "permissions":["tabs"]
-    
-  }
-  
+    "default_popup": "hello.html"
+  },
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/douyinLive.js"],
+      "css": ["css/douyinLive.css","css/douyinShop.css"],
+      "runAt": "document_idle",
+      "all_frames": true,
+      "matches": ["https://live.douyin.com/*","https://fxg.jinritemai.com/*"]
+    },
+    {
+      "js": ["scripts/kuaishouLive.js"],
+      "css": ["css/kuaishouLive.css","css/kuaishouShop.css"],
+      "runAt": "document_idle",
+      "all_frames": true,
+      "matches": ["https://live.kuaishou.com/*","https://login.kwaixiaodian.com/*"]
+    },
+    {
+      "js": ["scripts/taobaoLive.js"],
+      "css": ["css/taobaoLive.css"],
+      "runAt": "document_idle",
+      "all_frames": true,
+      "matches": ["https://tbzb.taobao.com/*"]
+    },
+    {
+      "js": ["scripts/taobaoShop.js"],
+      "runAt": "document_idle",
+      "all_frames": true,
+      "matches": [
+        "https://myseller.taobao.com/home.htm/qn-live-container/live/*"
+      ]
+    },
+    {
+      "js": ["scripts/weixinLive.js"],
+      "css": ["css/weixinLive.css"],
+      "runAt": "document_idle",
+      "all_frames": true,
+      "matches": ["https://channels.weixin.qq.com/*"]
+    }
+  ],
+  "permissions": ["tabs"]
+}

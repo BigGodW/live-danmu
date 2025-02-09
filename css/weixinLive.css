@@ -114,4 +114,17 @@
     }  */
 
 
+    /* 登陆页 */
+    div.content,div.footer-wrap{
+        display: none !important;
+    }
+    div.platform-info{
+        flex-direction: column !important;
+        transform: unset !important;
+        left: unset !important;
+        align-items: unset !important;
+        justify-content: unset !important;
+        padding-left: 60px !important;
+    }
+
 }
