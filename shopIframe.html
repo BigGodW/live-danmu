@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            overflow: hidden;
+        }
+        .title{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .box{
+            display: flex;
+            margin-left: -5px;
+            justify-content: space-around;
+            background-color: aqua;
+            /* overflow: hidden; */
+            transform-origin: left top;
+        }
+        .item{
+            flex: 1;
+            max-width: 400px;
+            min-width: 350px;
+            width: 350px;
+            padding: 5px;
+            background-color: blanchedalmond;
+            h1{text-align: center;
+                font-size: 20px;
+            }
+        }
+        iframe{
+            margin: 0 auto;
+            width: 100%;
+            background-color: red;
+            height: 750px;
+            padding: 5px;
+            overflow: hidden;
+            
+        }
+    </style>
+</head>
+<body>
+   <div id="app">
+    <h1 class="title">电商直播后台</h1>
+    <div class="box">
+        <div class="item">
+            <h1>抖音</h1>
+            <iframe src="https://fxg.jinritemai.com/ffa/buyin/dashboard/live/control" frameborder="0"></iframe>
+        </div>
+        <div class="item">
+            <h1>快手</h1>
+            <iframe src="https://zs.kwaixiaodian.com/page/helper" frameborder="0"></iframe>
+        </div>
+        <div class="item">
+            <h1>视频号</h1>
+            <iframe src="https://channels.weixin.qq.com/platform/live/liveBuild
+            " frameborder="0"></iframe>
+        </div>
+    </div>
+   </div>
+   
+</body>
+<script src="shopIframe.js"></script>
+</html>

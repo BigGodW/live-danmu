@@ -24,5 +24,5 @@ btn.addEventListener("click", () => {
 
 const shopBtn = document.getElementById('shopurl')
 shopBtn.addEventListener('click',()=>{
-  chrome.windows.create({url:"https://live.wubug.cn/live", type: "normal"})
+  chrome.windows.create({url:"shopIframe.html", type: "normal"})
 })
