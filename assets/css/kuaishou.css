@@ -1,0 +1,6 @@
+.header-placeholder {display:none}
+.room{min-width:0px; min-height:0px}
+.player-wrapper {display:none}
+#liveroom__sidebar{
+  width: 100%;
+}
