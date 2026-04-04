@@ -17,7 +17,7 @@ const CONFIG = [
   {
     name: "微信视频号",
     host: "channels.weixin.qq.com",
-    localCssUrl: 'assets/css/weixin.css', // 修复拼写错误
+    localCssUrl: 'assets/css/weixin.css', // 
     newCssUrl: 'https://cdn.jsdelivr.net/gh/BigGodW/live-danmu@master/assets/css/weixin.css',
     localJsUrl: "assets/weixin.js"
   }
