@@ -89,7 +89,9 @@ div.live-gift-list-item{
 .live-gift-list-item .live-gift-list-item-content .live-gift-list-item-content-value.inactive,
 span.live-gift-list-item-number no-0 inactive,
 .finder-ui-live-global-level-badge.global-level-1,
-.live-gift-list-item .live-gift-list-item-number.inactive{
+.live-gift-list-item .live-gift-list-item-number.inactive,
+.live-gift-badge
+{
   display:none !important;
 }
 .live-gift-list-item .live-gift-list-item-content .live-gift-list-item-content-detail{

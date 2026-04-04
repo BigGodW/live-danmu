@@ -4,21 +4,21 @@ const CONFIG = [
     name:"快手",
     host: "live.kuaishou.com",
     localCssUrl: "assets/css/kuaishou.css",
-    newCssUrl: "https://cdn.jsdelivr.net/gh/BigGodW/live-danmu@master/assets/css/kuaishou.css",
+    newCssUrl: "https://raw.githubusercontent.com/BigGodW/live-danmu/master/assets/css/kuaishou.css",
     localJsUrl: "assets/kuaishou.js"
   },
   {
     name: "抖音",
     host: "live.douyin.com",
     localCssUrl: "assets/css/douyin.css",
-    newCssUrl: 'https://cdn.jsdelivr.net/gh/BigGodW/live-danmu@master/assets/css/douyin.css',
+    newCssUrl: 'https://raw.githubusercontent.com/BigGodW/live-danmu/master/assets/css/douyin.css',
     localJsUrl: "assets/douyin.js"
   },
   {
     name: "微信视频号",
     host: "channels.weixin.qq.com",
     localCssUrl: 'assets/css/weixin.css', // 
-    newCssUrl: 'https://cdn.jsdelivr.net/gh/BigGodW/live-danmu@master/assets/css/weixin.css',
+    newCssUrl: 'https://raw.githubusercontent.com/BigGodW/live-danmu/master/assets/css/weixin.css',
     localJsUrl: "assets/weixin.js"
   }
 ];

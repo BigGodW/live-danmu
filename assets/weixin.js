@@ -6,7 +6,7 @@ console.log("获取微信视频号直播弹幕数据");
 const wujieEl = document.querySelector("wujie-app");
 const shadowRoot = wujieEl.shadowRoot;
 
-fetch("https://cdn.jsdelivr.net/gh/BigGodW/live-danmu@master/assets/css/weixin.css") // 
+fetch("https://raw.githubusercontent.com/BigGodW/live-danmu/master/assets/css/weixin.css") // 
   .then((res) => res.text())
   .then((cssText) => {
     // 3. 注入到 Shadow DOM
